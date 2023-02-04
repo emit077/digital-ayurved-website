@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*, body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+  //overflow-x: hidden;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+
+.mw-100 {
+  max-width: 90%;
+  position: relative;
+  z-index: 100;
+}
+
+.router-link {
+  text-decoration: none;
+  color: unset;
+}
+
+.fw-450 {
+  font-weight: 450 !important;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+
+// setting the default font
+
+$font-family: "Poppins";
+.v-application {
+  [class*="text-"] {
+    color: #36405a;
+    font-family: $font-family, sans-serif !important;
+  }
+
+  font-family: $font-family, sans-serif !important;
+}
+
+.background-top-cover {
+  background-position: top;
+  background-size: cover;
+  margin-top: -1px;
+}
+
+.app-padding {
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+@media screen and (max-width: 1260px) {
+  .app-padding {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+/* text underline on hover effect */
+.un {
+  font-weight: 450;
+  //color: rgb(var(--v-theme-theme-stroke-2), 1);
+  text-decoration: none;
+}
+
+.un:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  margin-top: 3px;
+  display: block;
+  background: rgb(var(--v-theme-theme-stroke-2), 1);
+  transition-duration: 800ms;
+}
+
+.un:hover:after {
+  width: 80%;
+}
+
+.text-un {
+  color: rgb(var(--v-theme-theme-stroke-2), 1) !important;
+}
+
+.text-un::after {
+  width: 80% !important;
+}
+
+

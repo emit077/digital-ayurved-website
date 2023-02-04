@@ -1,0 +1,61 @@
+.animate-spin-1 {
+  animation: spin360 30s linear infinite;
+}
+
+.animate-spin-2 {
+  animation: spin 10s ease-in-out infinite;
+}
+
+@keyframes spin {
+  50% {
+    transform: rotate(-360deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin360 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-ping {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  animation: ping 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes ping {
+  from {
+    transform: scale(.15);
+    opacity: 0.6; /* Firefox */
+  }
+  to {
+    transform: scale(2);
+    opacity: 0; /* Firefox */
+  }
+}
+
+.animate-ring {
+  animation: ring 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes ring {
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.animate-scroll-spin {
+  animation: spin360 1s ease-in-out infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -3s);
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
