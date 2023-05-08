@@ -13,9 +13,10 @@ cd dist
 git init
 git add -A
 git commit -m 'last deploy'
-git push -f git@github.com:emit077/spidertech-website.git master:gh-pages
+git push -f git@github.com:emit077/digital-ayurved-website.git master:gh-pages
 cd -
 
 
+
 # deploye to s3 bucket
-aws s3 sync ./dist/ s3://spidertech.in/
+#aws s3 sync ./dist/ s3://spidertech.in/

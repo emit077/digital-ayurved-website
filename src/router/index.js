@@ -54,7 +54,7 @@ router.beforeEach((to, from, next) => {
   next()
   //setting the title
   if (to && to.meta && to.meta.title)
-    window.document.title = "Spidertech | " + to.meta.title;
+    window.document.title = "DigitalAyurved | " + to.meta.title;
 
 });
 

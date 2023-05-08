@@ -30,7 +30,9 @@
             </router-link>
           </span>
         </div>
-
+        <a href="https://app.digitalayurved.in/">
+          <v-btn color="theme-stroke-1" variant="outlined" class="send-btn ml-5"> Login</v-btn>
+        </a>
       </div>
       <!-- mobile -->
       <div v-else>
@@ -58,6 +60,9 @@
             </router-link>
           </span>
             </div>
+            <a href="https://app.digitalayurved.in/">
+              <v-btn color="theme-stroke-1" variant="outlined" class="send-btn mt-3"> Login</v-btn>
+            </a>
           </div>
         </v-menu>
       </div>

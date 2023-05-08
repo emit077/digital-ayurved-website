@@ -76,7 +76,6 @@
             </div>
             <div class="d-inline-block" style="width: 90%">
               <p> {{ clinic_address }}</p>
-              <p class="mt-2"> {{ clinic_address2 }}</p>
             </div>
           </div>
         </div>
@@ -143,8 +142,7 @@ export default {
     footer: false,
     contact_number: "+91 77240 30550",
     contact_email: "digitalayurved@gmail.com",
-    clinic_address: "Pull Road Sheorinarayan, Dist. Janjgir Champa (CG)",
-    clinic_address2: "Bus Stand Pawani, Dist. Sarangarh-Bilaigarh (CG)",
+    clinic_address: "Bus Stand Pawani, Dist. Sarangarh-Bilaigarh (CG)",
     contact_list: [
       {
         icon: "mdi-facebook",

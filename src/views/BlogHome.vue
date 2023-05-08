@@ -72,15 +72,43 @@ export default {
   },
   data() {
     return {
-      blog_list: Data.blog_list,
+      blog_list: [],
       recentBlog: Data.blog_list[0],
     }
   }, beforeMount() {
     this.toggleLoading()
   },
   mounted() {
+    this.getBlogList()
   },
-  methods: {}
+  methods: {
+      /* fetching blog data */
+      getBlogList(is_cancel = true) {
+      const self = this;
+      let params = {};
+      const successHandler = (response) => {
+        if (response.data.success) {
+          self.blog_list = JSON.parse(response.data.blog_list);
+          self.recentBlog = response.data.blog_list[0];
+        }
+      };
+      const finallyHandler = () => {
+        self.table_loading = false;
+        // self.$store.dispatch("setPageLoader", false);
+      };
+
+      self.request_GET(
+        self,
+        self.$urls.BLOG_LIST,
+        params,
+        successHandler,
+        null,
+        null,
+        finallyHandler,
+        is_cancel
+      );
+    },
+  }
 };
 </script>
 
